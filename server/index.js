@@ -1,6 +1,6 @@
 let express = require('express');
 let app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5000;
 let bodyParser = require('body-parser');
 let mongoose = require('mongoose');
 let savedb = require('../database/index.js');
