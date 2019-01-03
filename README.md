@@ -5,7 +5,8 @@ playlist  component for Spotify Clone
 Spotify clone 
 
 # Development
-#installing Dependencies
+installing Dependencies
+
 npm install 
 
 # Running playlist component
