@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "react-dev": "webpack -d --watch",
     "server-dev": "nodemon server/index.js",
-    "seeddb" : "node database/seed.js"
+    "seeddb": "node database/seed.js"
   },
   "repository": {
     "type": "git",
@@ -33,6 +33,7 @@
     "mongoose": "^5.4.0",
     "path": "^0.12.7",
     "react": "^16.7.0",
+    "react-bootstrap-table": "^4.3.1",
     "react-dom": "^16.7.0"
   }
 }
