@@ -8,7 +8,9 @@ let songSchema = mongoose.Schema({
     name: String,
     time: String,
     artist: String,
-    album: String
+    album: String,
+    file_url: String
+
 });
 let songs = mongoose.model('songs', songSchema)
 let songsCreate = () => {
@@ -18,7 +20,8 @@ let songsCreate = () => {
             name: faker.name.findName(),
             time: Math.floor(Math.random() * 10)+ 'min',
             artist: faker.name.findName(),
-            album: faker.random.words()
+            album: faker.random.words(),
+            file_url: faker.internet.url()
         }
         songsList.push(songEntry)
     }
