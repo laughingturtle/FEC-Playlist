@@ -3,7 +3,6 @@ let app = express();
 const port = process.env.PORT || 5000;
 let bodyParser = require('body-parser');
 let mongoose = require('mongoose');
-let savedb = require('../database/index.js');
 mongoose.connect('mongodb://localhost/audiodb');
 let db = mongoose.connection;
 
@@ -11,13 +10,45 @@ app.use(express.static(__dirname + '/../public'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true }));
 
-app.post('/audiolist', function(req,res){
-    //console.log('this is req body', req.body)
-    for(let i=0;i<req.body.length;i++){
-        //console.log('this is each req body', req.body[i])
-        savedb.save(req.body[i].name, req.body[i].time, req.body[i].artist, req.body[i].album);
-    }
-    res.sendStatus(201);
+app.get('/songs', function(req,res){
+    let collection = db.collection('songs')
+    collection.find().toArray(function(err,results){
+        if(err){
+            console.log('Error returned while getting data');
+        } else {
+            res.send(results);
+        }
+    })
+})
+app.get('/filterSongsJazz', function(req, res){
+    let collection = db.collection('songs')
+    collection.find({playlist_name: 'Jazz'}).toArray(function(err,results){
+        if(err){
+            console.log('Error returned while getting data');
+        } else {
+            res.send(results);
+        }
+    })
+})
+app.get('/filterSongsRock', function(req, res){
+    let collection = db.collection('songs')
+    collection.find({playlist_name: 'Rock'}).toArray(function(err,results){
+        if(err){
+            console.log('Error returned while getting data');
+        } else {
+            res.send(results);
+        }
+    })
+})
+app.get('/filterSongsPop', function(req, res){
+    let collection = db.collection('songs')
+    collection.find({playlist_name: 'Pop'}).toArray(function(err,results){
+        if(err){
+            console.log('Error returned while getting data');
+        } else {
+            res.send(results);
+        }
+    })
 })
 
 app.listen(port, ()=> {
