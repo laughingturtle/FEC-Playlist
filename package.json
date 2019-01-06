@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "react-dev": "webpack -d --watch",
     "server-dev": "nodemon server/index.js",
     "seeddb": "node database/seed.js"
@@ -28,12 +28,18 @@
   },
   "dependencies": {
     "body-parser": "^1.18.3",
+    "enzyme": "^3.8.0",
     "express": "^4.16.4",
     "faker": "^4.1.0",
+    "jest": "^23.6.0",
     "mongoose": "^5.4.0",
     "path": "^0.12.7",
     "react": "^16.7.0",
+    "react-bootstrap": "^0.32.4",
     "react-bootstrap-table": "^4.3.1",
-    "react-dom": "^16.7.0"
+    "react-dom": "^16.7.0",
+    "react-native-elements": "^0.19.1",
+    "react-native-vector-icons": "^6.1.0",
+    "styled-components": "^4.1.3"
   }
 }

@@ -22,5 +22,13 @@
     album: "Bee Moved!1",
     file_url: "//Users/songs/song3",
     playlist_name: "Rock"
+    },
+    {
+    name:"Bee Moved3",
+    time: "0:30",
+    artist: "Blue Monday FM3",
+    album: "Bee Moved!3",
+    file_url: "//Users/songs/song4",
+    playlist_name: "Rock"
     }
 ];

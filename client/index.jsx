@@ -1,6 +1,36 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import styled from 'styled-components';
+import {Grid, Row, Col, Image} from 'react-bootstrap';
 import AudioList from './components/AudioList.jsx';
+
+
+const Button1 = styled.button`
+  font-size: 1em;
+  margin: 1em;
+  padding: 0.25em 1em;
+  border: 2px solid palevioletred;
+  border-radius: 3px;
+  color: palevioletred;
+
+`;
+const Wrapper = styled.section`
+  padding: 2em;
+  background: papayawhip;
+`;
+
+const Title = styled.h1`
+  font-size: 1.5em;
+  text-align: center;
+  color: palevioletred;
+`;
+
+const Button = styled.button`
+  margin: 0.25em;
+  padding: 0.25em 1em;
+
+`;
+
 class App extends React.Component{
     constructor(props){
         super(props);
@@ -73,6 +103,7 @@ class App extends React.Component{
         )
 
     }
+
     componentDidMount(){
         this.getSongs();
     }
@@ -80,13 +111,36 @@ class App extends React.Component{
     render(){
         return(
             <div>
-                <h2>Spotify's Library</h2>
-                <button onClick={this.getSongs}>Home</button>
+                <Wrapper><Title>Songs Library</Title></Wrapper>
+                <Button1 onClick={this.getSongs}>Home</Button1>
 
             <div>
-                <button onClick={this.filteredSongsJazz}><img src="https://i.ibb.co/2Np9g4g/jazz.jpg" alt="Jazz"></img></button>
-                <button onClick={this.filteredSongsPop}><img src="https://i.ibb.co/XXMjhLn/pop.jpg" alt="POP"></img></button>
-                <button onClick={this.filteredSongsRock}><img src="https://i.ibb.co/23jKYxF/rock.jpg" alt="Rock"></img></button>
+                {/* <Button onClick={this.filteredSongsJazz} ><img  src="https://i.ibb.co/2Np9g4g/jazz.jpg" alt="Jazz"></img></Button>
+                <Button onClick={this.filteredSongsPop}><img  src="https://i.ibb.co/XXMjhLn/pop.jpg" alt="POP"></img></Button>
+                <Button onClick={this.filteredSongsRock}><img  src="https://i.ibb.co/23jKYxF/rock.jpg" alt="Rock"></img></Button> */}
+                <Grid>
+                    <Row>
+                        <Col xs={3} md={2}>
+                        <Image  style={{width: 200, height: 200}} onClick={this.filteredSongsJazz} src="https://i.ibb.co/M1kn0Yt/hiphop.png"  alt="171x180" thumbnail />
+                        </Col>
+                        <Col xs={3} md={2}>
+                        <Image  style={{width: 200, height: 200}} onClick={this.filteredSongsJazz} src="https://i.ibb.co/JmtzL59/country.jpg"  alt="171x180" thumbnail />
+                        </Col>
+                        <Col xs={3} md={2}>
+                        <Image  style={{width: 200, height: 200}} onClick={this.filteredSongsJazz} src="https://i.ibb.co/r3h1vrp/classical.jpg"  alt="171x180" thumbnail />
+                        </Col>
+                        <Col xs={3} md={2}>
+                        <Image  style={{width: 200, height: 200}} onClick={this.filteredSongsJazz} src="https://i.ibb.co/2Np9g4g/jazz.jpg"  alt="171x180" thumbnail />
+                        </Col>
+                        <Col xs={3} md={2}>
+                        <Image  style={{width: 200, height: 200}} onClick={this.filteredSongsPop} src="https://i.ibb.co/XXMjhLn/pop.jpg" alt="171x180" thumbnail />
+                        </Col>
+                        <Col xs={3} md={2}>
+                        <Image style={{width: 200, height: 200}} onClick={this.filteredSongsRock} src="https://i.ibb.co/23jKYxF/rock.jpg"  alt="171x180" thumbnail />
+                        </Col>
+                    </Row>
+                </Grid>
+                <br></br>
                 <AudioList audio={this.state.audio}/>
             </div>
 
@@ -94,5 +148,4 @@ class App extends React.Component{
         );
     }
 }
-
 ReactDOM.render(<App />, document.getElementById('app'));
