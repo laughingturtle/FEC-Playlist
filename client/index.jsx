@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 import styled from 'styled-components';
 import {Grid, Row, Col, Image} from 'react-bootstrap';
 import AudioList from './components/AudioList.jsx';
@@ -148,4 +148,5 @@ class App extends React.Component{
         );
     }
 }
-ReactDOM.render(<App />, document.getElementById('app'));
+module.exports = App;
+// ReactDOM.render(<App />, document.getElementById('app'));
