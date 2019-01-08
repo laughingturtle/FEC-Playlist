@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 import styled from 'styled-components';
 import {Grid, Row, Col, Image} from 'react-bootstrap';
 import AudioList from './components/AudioList.jsx';
@@ -115,9 +115,6 @@ class App extends React.Component{
                 <Button1 onClick={this.getSongs}>Home</Button1>
 
             <div>
-                {/* <Button onClick={this.filteredSongsJazz} ><img  src="https://i.ibb.co/2Np9g4g/jazz.jpg" alt="Jazz"></img></Button>
-                <Button onClick={this.filteredSongsPop}><img  src="https://i.ibb.co/XXMjhLn/pop.jpg" alt="POP"></img></Button>
-                <Button onClick={this.filteredSongsRock}><img  src="https://i.ibb.co/23jKYxF/rock.jpg" alt="Rock"></img></Button> */}
                 <Grid>
                     <Row>
                         <Col xs={3} md={2}>
@@ -148,4 +145,5 @@ class App extends React.Component{
         );
     }
 }
-ReactDOM.render(<App />, document.getElementById('app'));
+module.exports = App;
+// ReactDOM.render(<App />, document.getElementById('app'));

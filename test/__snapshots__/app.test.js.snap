@@ -1,0 +1,171 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> render() renders the component 1`] = `
+<div>
+  <styled.section>
+    <styled.h1>
+      Songs Library
+    </styled.h1>
+  </styled.section>
+  <styled.button
+    onClick={[Function]}
+  >
+    Home
+  </styled.button>
+  <div>
+    <Grid
+      bsClass="container"
+      componentClass="div"
+      fluid={false}
+    >
+      <Row
+        bsClass="row"
+        componentClass="div"
+      >
+        <Col
+          bsClass="col"
+          componentClass="div"
+          md={2}
+          xs={3}
+        >
+          <Image
+            alt="171x180"
+            bsClass="img"
+            circle={false}
+            onClick={[Function]}
+            responsive={false}
+            rounded={false}
+            src="https://i.ibb.co/M1kn0Yt/hiphop.png"
+            style={
+              Object {
+                "height": 200,
+                "width": 200,
+              }
+            }
+            thumbnail={true}
+          />
+        </Col>
+        <Col
+          bsClass="col"
+          componentClass="div"
+          md={2}
+          xs={3}
+        >
+          <Image
+            alt="171x180"
+            bsClass="img"
+            circle={false}
+            onClick={[Function]}
+            responsive={false}
+            rounded={false}
+            src="https://i.ibb.co/JmtzL59/country.jpg"
+            style={
+              Object {
+                "height": 200,
+                "width": 200,
+              }
+            }
+            thumbnail={true}
+          />
+        </Col>
+        <Col
+          bsClass="col"
+          componentClass="div"
+          md={2}
+          xs={3}
+        >
+          <Image
+            alt="171x180"
+            bsClass="img"
+            circle={false}
+            onClick={[Function]}
+            responsive={false}
+            rounded={false}
+            src="https://i.ibb.co/r3h1vrp/classical.jpg"
+            style={
+              Object {
+                "height": 200,
+                "width": 200,
+              }
+            }
+            thumbnail={true}
+          />
+        </Col>
+        <Col
+          bsClass="col"
+          componentClass="div"
+          md={2}
+          xs={3}
+        >
+          <Image
+            alt="171x180"
+            bsClass="img"
+            circle={false}
+            onClick={[Function]}
+            responsive={false}
+            rounded={false}
+            src="https://i.ibb.co/2Np9g4g/jazz.jpg"
+            style={
+              Object {
+                "height": 200,
+                "width": 200,
+              }
+            }
+            thumbnail={true}
+          />
+        </Col>
+        <Col
+          bsClass="col"
+          componentClass="div"
+          md={2}
+          xs={3}
+        >
+          <Image
+            alt="171x180"
+            bsClass="img"
+            circle={false}
+            onClick={[Function]}
+            responsive={false}
+            rounded={false}
+            src="https://i.ibb.co/XXMjhLn/pop.jpg"
+            style={
+              Object {
+                "height": 200,
+                "width": 200,
+              }
+            }
+            thumbnail={true}
+          />
+        </Col>
+        <Col
+          bsClass="col"
+          componentClass="div"
+          md={2}
+          xs={3}
+        >
+          <Image
+            alt="171x180"
+            bsClass="img"
+            circle={false}
+            onClick={[Function]}
+            responsive={false}
+            rounded={false}
+            src="https://i.ibb.co/23jKYxF/rock.jpg"
+            style={
+              Object {
+                "height": 200,
+                "width": 200,
+              }
+            }
+            thumbnail={true}
+          />
+        </Col>
+      </Row>
+    </Grid>
+    <br />
+    <AudioList
+      audio={Array []}
+    />
+  </div>
+</div>
+`;
