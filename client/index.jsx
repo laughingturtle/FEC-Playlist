@@ -115,9 +115,6 @@ class App extends React.Component{
                 <Button1 onClick={this.getSongs}>Home</Button1>
 
             <div>
-                {/* <Button onClick={this.filteredSongsJazz} ><img  src="https://i.ibb.co/2Np9g4g/jazz.jpg" alt="Jazz"></img></Button>
-                <Button onClick={this.filteredSongsPop}><img  src="https://i.ibb.co/XXMjhLn/pop.jpg" alt="POP"></img></Button>
-                <Button onClick={this.filteredSongsRock}><img  src="https://i.ibb.co/23jKYxF/rock.jpg" alt="Rock"></img></Button> */}
                 <Grid>
                     <Row>
                         <Col xs={3} md={2}>
