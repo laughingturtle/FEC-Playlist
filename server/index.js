@@ -5,7 +5,11 @@ let bodyParser = require('body-parser');
 let mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/audiodb');
 let db = mongoose.connection;
+var cors = require('cors');
 
+app.use(cors({
+    origin: "*"
+}));
 app.use(express.static(__dirname + '/../public'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true }));
@@ -54,3 +58,4 @@ app.get('/filterSongsPop', function(req, res){
 app.listen(port, ()=> {
     console.log(`server is listening on http:\\\\localhost:${port}`);
 });
+

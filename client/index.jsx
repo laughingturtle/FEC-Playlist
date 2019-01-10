@@ -145,5 +145,5 @@ class App extends React.Component{
         );
     }
 }
-module.exports = App;
+ module.exports = App;
 // ReactDOM.render(<App />, document.getElementById('app'));
