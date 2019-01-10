@@ -35,10 +35,12 @@
     "enzyme-to-json": "^3.3.5",
     "fetch-mock": "^7.3.0",
     "jest-fetch-mock": "^2.1.0",
+    "supertest": "^3.3.0",
     "webpack": "^2.2.1"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
     "express": "^4.16.4",
     "faker": "^4.1.0",
     "jest": "^23.6.0",
