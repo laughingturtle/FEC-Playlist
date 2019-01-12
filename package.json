@@ -5,7 +5,8 @@
   "main": "index.js",
   "jest": {
     "automock": false,
-    "setupTestFrameworkScriptFile": "./test/setupTests.js"
+    "setupTestFrameworkScriptFile": "./test/setupTests.js",
+    "collectCoverage": true
   },
   "scripts": {
     "test": "jest",
@@ -52,6 +53,7 @@
     "react-dom": "^16.7.0",
     "react-native-elements": "^0.19.1",
     "react-native-vector-icons": "^6.1.0",
+    "sqs-producer": "^1.6.2",
     "styled-components": "^4.1.3"
   }
 }
