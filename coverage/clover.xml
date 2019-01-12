@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1547096511991" clover="3.2.0">
+  <project timestamp="1547096511993" name="All files">
+    <metrics statements="35" coveredstatements="18" conditionals="0" coveredconditionals="0" methods="22" coveredmethods="6" elements="57" coveredelements="24" complexity="0" loc="35" ncloc="35" packages="3" files="3" classes="3">
+      <package name="client">
+        <metrics statements="29" coveredstatements="16" conditionals="0" coveredconditionals="0" methods="19" coveredmethods="6"/>
+        <file name="index.jsx" path="/Users/HR/rpt/PlayList/client/index.jsx">
+          <metrics statements="29" coveredstatements="16" conditionals="0" coveredconditionals="0" methods="19" coveredmethods="6"/>
+          <line num="8" count="1" type="stmt"/>
+          <line num="17" count="1" type="stmt"/>
+          <line num="22" count="1" type="stmt"/>
+          <line num="28" count="1" type="stmt"/>
+          <line num="36" count="1" type="stmt"/>
+          <line num="37" count="1" type="stmt"/>
+          <line num="41" count="1" type="stmt"/>
+          <line num="42" count="1" type="stmt"/>
+          <line num="43" count="1" type="stmt"/>
+          <line num="44" count="1" type="stmt"/>
+          <line num="48" count="1" type="stmt"/>
+          <line num="49" count="1" type="stmt"/>
+          <line num="52" count="0" type="stmt"/>
+          <line num="57" count="1" type="stmt"/>
+          <line num="62" count="0" type="stmt"/>
+          <line num="63" count="0" type="stmt"/>
+          <line num="66" count="0" type="stmt"/>
+          <line num="71" count="0" type="stmt"/>
+          <line num="77" count="0" type="stmt"/>
+          <line num="78" count="0" type="stmt"/>
+          <line num="81" count="0" type="stmt"/>
+          <line num="86" count="0" type="stmt"/>
+          <line num="92" count="0" type="stmt"/>
+          <line num="93" count="0" type="stmt"/>
+          <line num="96" count="0" type="stmt"/>
+          <line num="101" count="0" type="stmt"/>
+          <line num="108" count="1" type="stmt"/>
+          <line num="112" count="1" type="stmt"/>
+          <line num="148" count="1" type="stmt"/>
+        </file>
+      </package>
+      <package name="client.components">
+        <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <file name="AudioList.jsx" path="/Users/HR/rpt/PlayList/client/components/AudioList.jsx">
+          <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+          <line num="9" count="0" type="stmt"/>
+          <line num="20" count="0" type="stmt"/>
+          <line num="27" count="0" type="stmt"/>
+          <line num="33" count="0" type="stmt"/>
+        </file>
+      </package>
+      <package name="test">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <file name="setupTests.js" path="/Users/HR/rpt/PlayList/test/setupTests.js">
+          <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="3" count="1" type="stmt"/>
+          <line num="4" count="1" type="stmt"/>
+        </file>
+      </package>
+    </metrics>
+  </project>
+</coverage>
