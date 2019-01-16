@@ -12,10 +12,10 @@ var producer = Producer.create({
   secretAccessKey: creds.AWS_SECRET_ACCESS_KEY
 });
 
-const sendMessage = (songName) => {
+const sendMessage = (songName, songUrl, songArtist) => {
     producer.send([{
         id: '1',
-        body: songName
+        body: JSON.stringify({songName: songName, songUrl:songUrl,  songArtist:songArtist})
       }], function(err) {
         if (err) console.log(err);
       });
@@ -44,7 +44,7 @@ function AudioList (props){
                 <td>{file.album}</td>
                 {/* <td>{file.file_url}</td>
                 <td>{file.playlist_name}</td> */}
-                <td><Image onClick={ () =>sendMessage(file.name)}  style={{width: 23, height: 23}}  src="https://i.ibb.co/Y0kVjc0/play.png"  alt="20x20" circle /></td>
+                <td><Image onClick={ () =>sendMessage(file.name, file.file_url, file.artist)}  style={{width: 23, height: 23}}  src="https://i.ibb.co/Y0kVjc0/play.png"  alt="20x20" circle /></td>
                 </tr>
                     )}
             </tbody>
