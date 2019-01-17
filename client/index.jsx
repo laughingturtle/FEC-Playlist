@@ -45,7 +45,7 @@ class App extends React.Component{
 
     }
     getSongs(){
-        fetch('http://localhost:5000/songs')
+        fetch('/songs')
         .then(res => res.json())
         .then(
             (result) => {
@@ -59,7 +59,7 @@ class App extends React.Component{
         )
     }
     filteredSongsJazz(){
-        fetch('http://localhost:5000/filterSongsJazz')
+        fetch('/filterSongsJazz')
         .then(res => res.json())
         .then(
             (result) => {
@@ -74,7 +74,7 @@ class App extends React.Component{
 
     }
     filteredSongsPop(){
-        fetch('http://localhost:5000/filterSongsPop')
+        fetch('/filterSongsPop')
         .then(res => res.json())
         .then(
             (result) => {
@@ -89,7 +89,7 @@ class App extends React.Component{
 
     }
     filteredSongsRock(){
-        fetch('http://localhost:5000/filterSongsRock')
+        fetch('/filterSongsRock')
         .then(res => res.json())
         .then(
             (result) => {
