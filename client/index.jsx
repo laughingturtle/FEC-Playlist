@@ -2,6 +2,7 @@ import React from 'react';
 // import ReactDOM from 'react-dom';
 import styled from 'styled-components';
 import {Grid, Row, Col, Image} from 'react-bootstrap';
+import SearchField from 'react-search-field';
 import AudioList from './components/AudioList.jsx';
 
 
@@ -42,7 +43,7 @@ class App extends React.Component{
         this.filteredSongsJazz = this.filteredSongsJazz.bind(this)
         this.filteredSongsPop = this.filteredSongsPop.bind(this)
         this.filteredSongsRock = this.filteredSongsRock.bind(this)
-
+        this.searchBySongName = this.searchBySongName.bind(this);
     }
     getSongs(){
         fetch('/songs')
@@ -103,6 +104,22 @@ class App extends React.Component{
         )
 
     }
+    searchBySongName(songName) {
+            console.log('this is what text entered:',songName);
+            fetch('/songs')
+            .then(res => res.json())
+            .then(
+                (result) => {
+                    var newResult = result.filter(i => i.name===songName)
+                    this.setState({
+                        audio: newResult
+                    })
+                },
+                (error) =>{
+                    console.log('something went wrong!!')
+                }
+            )
+      }
 
     componentDidMount(){
         this.getSongs();
@@ -113,6 +130,7 @@ class App extends React.Component{
             <div>
                 <Wrapper><Title>Songs Library</Title></Wrapper>
                 <Button1 onClick={this.getSongs}>Home</Button1>
+                <SearchField placeholder='Search song name'   onSearchClick={this.searchBySongName}/>
 
             <div>
                 <Grid>
