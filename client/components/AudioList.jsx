@@ -26,7 +26,7 @@ const sendMessage = (songName, songUrl, songArtist) => {
 function AudioList (props){
     const audio = (
 
-        <Table striped condensed hover>
+        <Table striped condensed >
             <thead>
             <tr>
             <th>Song name</th>
