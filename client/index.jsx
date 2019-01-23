@@ -17,8 +17,7 @@ const Button1 = styled.button`
 `;
 const Wrapper = styled.section`
   padding: 2em;
-  background: papayawhip;
-`;
+  `;
 
 const Title = styled.h1`
   font-size: 1.5em;
@@ -130,28 +129,28 @@ class App extends React.Component{
             <div>
                 <Wrapper><Title>Songs Library</Title></Wrapper>
                 <Button1 onClick={this.getSongs}>Home</Button1>
-                <SearchField placeholder='Search song name'   onSearchClick={this.searchBySongName}/>
+                <SearchField placeholder='Search song name'   onChange={this.searchBySongName}/>
 
             <div>
                 <Grid>
                     <Row>
                         <Col xs={3} md={2}>
-                        <Image  style={{width: 200, height: 200}} onClick={this.filteredSongsJazz} src="https://i.ibb.co/M1kn0Yt/hiphop.png"  alt="171x180" thumbnail />
+                        <Image  style={{width: 100, height: 100}} onClick={this.filteredSongsJazz} src="https://i.ibb.co/M1kn0Yt/hiphop.png"  alt="171x180" thumbnail />
                         </Col>
                         <Col xs={3} md={2}>
-                        <Image  style={{width: 200, height: 200}} onClick={this.filteredSongsJazz} src="https://i.ibb.co/JmtzL59/country.jpg"  alt="171x180" thumbnail />
+                        <Image  style={{width: 100, height: 100}} onClick={this.filteredSongsJazz} src="https://i.ibb.co/JmtzL59/country.jpg"  alt="171x180" thumbnail />
                         </Col>
                         <Col xs={3} md={2}>
-                        <Image  style={{width: 200, height: 200}} onClick={this.filteredSongsJazz} src="https://i.ibb.co/r3h1vrp/classical.jpg"  alt="171x180" thumbnail />
+                        <Image  style={{width: 100, height: 100}} onClick={this.filteredSongsJazz} src="https://i.ibb.co/r3h1vrp/classical.jpg"  alt="171x180" thumbnail />
                         </Col>
                         <Col xs={3} md={2}>
-                        <Image  style={{width: 200, height: 200}} onClick={this.filteredSongsJazz} src="https://i.ibb.co/2Np9g4g/jazz.jpg"  alt="171x180" thumbnail />
+                        <Image  style={{width: 100, height: 100}} onClick={this.filteredSongsJazz} src="https://i.ibb.co/2Np9g4g/jazz.jpg"  alt="171x180" thumbnail />
                         </Col>
                         <Col xs={3} md={2}>
-                        <Image  style={{width: 200, height: 200}} onClick={this.filteredSongsPop} src="https://i.ibb.co/XXMjhLn/pop.jpg" alt="171x180" thumbnail />
+                        <Image  style={{width: 100, height: 100}} onClick={this.filteredSongsPop} src="https://i.ibb.co/XXMjhLn/pop.jpg" alt="171x180" thumbnail />
                         </Col>
                         <Col xs={3} md={2}>
-                        <Image style={{width: 200, height: 200}} onClick={this.filteredSongsRock} src="https://i.ibb.co/23jKYxF/rock.jpg"  alt="171x180" thumbnail />
+                        <Image style={{width: 100, height: 100}} onClick={this.filteredSongsRock} src="https://i.ibb.co/23jKYxF/rock.jpg"  alt="171x180" thumbnail />
                         </Col>
                     </Row>
                 </Grid>
